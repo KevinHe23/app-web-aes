@@ -2,7 +2,7 @@ import React from "react";
 
 function Registro(){
     return(
-        <div>
+        <div className="container micontenedor">
             <h1>Registro</h1>
         </div>
     );
