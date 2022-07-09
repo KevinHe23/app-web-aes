@@ -1,0 +1,26 @@
+{
+  "name": "app-web-aes",
+  "version": "1.0.0",
+  "description": "Repositorio de la simulación del proyecto de investigación",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinHe23/app-web-aes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinHe23/app-web-aes/issues"
+  },
+  "homepage": "https://github.com/KevinHe23/app-web-aes#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.4"
+  }
+}
