@@ -1,12 +1,11 @@
 import React from "react";
 
-function Home(){
+function Login(){
     return(
         <div className="container micontenedor">
-            
-            <h1>Banco Nacional de Honduras</h1>
+            <h1>Login</h1>
         </div>
     );
 }
 
-export default Home;
+export default Login;
