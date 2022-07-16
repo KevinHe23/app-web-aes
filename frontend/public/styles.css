@@ -1,12 +1,12 @@
 header {
-    background-color: #00BCE4 ;
+    background-color: #00BCE4;
 }
 
 footer {
-    background-color:  #00BCE4;
+    background-color: #00BCE4;
 }
 
-.micontenedor{
+.micontenedor {
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -14,20 +14,20 @@ footer {
 .form-signin {
     max-width: 330px;
     padding: 15px;
-  }
-  
-  .form-signin .form-floating:focus-within {
+}
+
+.form-signin .form-floating:focus-within {
     z-index: 2;
-  }
-  
-  .form-signin input[type="email"] {
+}
+
+.form-signin input[type="email"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-  }
-  
-  .form-signin input[type="password"] {
+}
+
+.form-signin input[type="password"] {
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-  }
+}
