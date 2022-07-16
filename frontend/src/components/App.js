@@ -5,12 +5,12 @@ import Footer from "./partials/Footer";
 import { BrowserRouter as Router } from "react-router-dom";
 import Direccionamiento from "./Direccionamiento";
 
-function App(){
+function App() {
     return (
         <Router>
             <div>
                 <Header />
-                    <Direccionamiento />
+                <Direccionamiento />
                 <Footer />
             </div>
         </Router>

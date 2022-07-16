@@ -1,7 +1,7 @@
 import React from "react";
 
-function Login(){
-    return(
+function Login() {
+    return (
         <div className="container micontenedor">
             <h1>Login</h1>
         </div>

@@ -6,12 +6,12 @@ import Home from "./Paginas/Home";
 import Login from "./Paginas/Login";
 import Registro from "./Paginas/Registro";
 
-function Direccionamiento(){
-    return(
+function Direccionamiento() {
+    return (
         <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/registro" element={<Registro/>}/>
-            <Route path="/login" element={<Login/>}/>
+            <Route path="/" element={<Home />} />
+            <Route path="/registro" element={<Registro />} />
+            <Route path="/login" element={<Login />} />
         </Routes>
     );
 }
