@@ -9,8 +9,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 // solicitudes o declaraciones previas
 
 // conectar atlas 
-mongoose.connect("mongodb+srv://kevinhe23:miappdb.@clustermiapp.hafmi.mongodb.net/MiAppDB", {useNewUrlParser: true});
-
+mongoose.connect("mongodb+srv://mibasededatos:skWejDHthYj4YrkM@clustermiapp.hafmi.mongodb.net/MiAppDB", {useNewUrlParser: true});
 //Base de datos
 
 
