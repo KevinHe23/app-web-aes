@@ -83,6 +83,7 @@ function Registro() {
           <button
             onClick={handleClick}
             className="w-100 btn btn-lg btn-primary"
+            
             type="submit"
           >
             Registrarse

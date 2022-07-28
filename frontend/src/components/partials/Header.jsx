@@ -24,7 +24,9 @@ function Header() {
             aria-current="page"
           >
             <span className="fs-4">Banco Nacional de Honduras</span>
+            
           </Link>
+          
           <div class="col-md-3 text-end">
             <button type="button" class="btn btn-primary me-2" onClick={Login}>
               Login

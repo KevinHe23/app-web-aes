@@ -9,6 +9,8 @@ footer {
 .micontenedor {
     padding-top: 50px;
     padding-bottom: 50px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .form-signin {
@@ -30,4 +32,9 @@ footer {
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
