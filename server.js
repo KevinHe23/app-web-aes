@@ -42,7 +42,27 @@ app.post("/registrar", function(req, res){
     usuarioDB.save(); 
 });
 
-// React utuliza por defecto el puerto 3000, hay que agregar otro puerto
-app.listen(5000, function(){
+
+// HEROKU //
+// usar estaticos cuando esta en modo produccion //
+
+if(process.env.NODE_ENV === 'production'){
+    app.use(express.static('frontend/build'));
+    app.get("*", (req, res)=>{
+      res.sendFile((__dirname + "/frontend/build/index.html"));  
+    })
+}
+
+// cambio de puerto en heroku
+
+let port = process.env.PORT;
+if( port == null || port == ""){
+    port = 5000;
+}
+// HEROKU //
+
+
+// React utiliza por defecto el puerto 3000, hay que agregar otro puerto
+app.listen(port, function(){
 console.log("servidor express funcionando");
 })
