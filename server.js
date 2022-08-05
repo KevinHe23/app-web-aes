@@ -1,7 +1,9 @@
+require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const encrypt = require("mongoose-encryption");
 
 const app = express();
 app.use(express.json());
@@ -16,11 +18,18 @@ mongoose.connect(
 //Base de datos
 
 //1. Esquema
-const usuarioSchema = {
-  nombre: String,
-  email: String,
-  contraseña: String,
-};
+
+const Schema = mongoose.Schema;
+const usuarioSchema = new Schema ({ 
+    nombre: String,
+    email: String,
+    contraseña: String
+});
+
+
+usuarioSchema.plugin(encrypt, {secret: process.env.SECRETO, encryptedFields: ["contraseña"]});
+ 
+
 
 //2. crear el modelo
 const Usuario = new mongoose.model("Usuario", usuarioSchema);
