@@ -1,4 +1,4 @@
-require("dotenv").config();
+
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -26,8 +26,8 @@ const usuarioSchema = new Schema ({
     contraseña: String
 });
 
-
-usuarioSchema.plugin(encrypt, {secret: process.env.SECRETO, encryptedFields: ["contraseña"]});
+const secreto = "mi_clave_secreta";
+usuarioSchema.plugin(encrypt, {secret: secreto, encryptedFields: ["contraseña"]});
  
 
 
