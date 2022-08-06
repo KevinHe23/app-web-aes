@@ -56,12 +56,13 @@ app.post("/registrar", function (req, res) {
 // HEROKU //
 // usar estaticos cuando esta en modo produccion //
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("frontend/build"));
+// usar estáticos cuando esta en modo produccion //
+if(process.env.NODE_ENV === 'production') {
+  app.use(express.static('frontend/build'));
   app.get("*", (req, res) => {
-    res.sendFile((__dirname + "/frontend/build/index.html"));
-  });
-}
+      res.sendFile((__dirname + "/frontend/build/index.html"));
+  })
+  }
 
 // cambio de puerto en heroku
 
